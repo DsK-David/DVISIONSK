@@ -1,0 +1,175 @@
+
+body{
+    background:  #090d00; 
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+.welcome-text { font: 400 1em/1.5 "Neuton";
+     background:  #090d00; 
+     color: rgba(255,255,255,.25);
+      text-align: center; 
+      opacity: 0;
+      margin: 0 }
+
+.text {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+}
+
+  
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+.bio{
+    background: rgba(61, 6, 113, 0.421);
+    opacity: 0;
+    margin-top: 350px;
+    width: 100%;
+    height: 700px;
+    transition: opacity 1s;
+}
+.bio:hover{
+    opacity: 8;
+
+}
+img{
+    width: 300px;
+    height: 400px;
+ margin-left: 450px;
+ margin-top: 20px;
+ border-radius: 5000%;
+}
+.text-logo{
+    text-align: center;
+    font-size: 30pt;
+}
+.projetos{
+    width: 100%;
+    height:1900px;
+    background: #000;
+    opacity: 0;
+    transition: opacity 1s;
+    color: #fff;
+    text-align: center;
+}
+h3{
+    text-transform: uppercase;
+}
+.projetos:hover{
+    opacity: 9;
+}
+.projeto1{
+    width: 300px;
+    height: 200px;
+    background: rgba(17, 17, 17, 0.407);
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 40px;
+    display:block;
+    transition: transform 1s;
+    transform: translateX(0) scale(1.1);
+}
+.projeto1:hover{
+    transform: translateX(10px) scale(1.6);
+}
+a{
+    color: #111;
+    text-decoration: none;
+    background: #fff;
+    padding: 9px;
+    margin-top: 30px;
+}
+.social{
+    width: 100%;
+    height: 300px;
+    background: rgba(204, 204, 204, 0.257);
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+    color: white;
+}
+.social:hover{
+    opacity: 9;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-instagram {
+    color: white;
+    width: 30px;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 25%);
+}
+.fa-github{
+    background: #000;
+    color: #fff;
+}
+.fa-twitter{
+    background: rgb(0, 166, 255);
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    opacity: 0;
+}
+footer:hover{
+    opacity: 9;
+}
+.politica{
+    color: rgba(204, 204, 204, 0.379);
+    font-size: 10pt;
+    background: none;
+    opacity: 1.5;
+    font: 100;
+
+}
+.politica:hover{
+    text-decoration: underline;
+}
